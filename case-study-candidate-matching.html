@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-Powered Candidate Matching System - Case Study by Abubakri Bello">
+    <title>Candidate Matching Case Study | Abubakri Bello</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Specific styles for detail pages to ensure they look premium */
+        .case-study-detail {
+            padding: var(--space-20) 0;
+        }
+
+        .case-study-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-6);
+            margin-bottom: var(--space-16);
+        }
+
+        .overview-card {
+            background: var(--glass-bg);
+            padding: var(--space-6);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--glass-border);
+            text-align: center;
+        }
+
+        .overview-card h3 {
+            color: var(--color-accent-blue);
+            margin-bottom: var(--space-2);
+            font-size: var(--text-sm);
+            text-transform: uppercase;
+        }
+
+        .overview-card p {
+            font-weight: 700;
+            font-size: var(--text-lg);
+        }
+
+        .case-study-section {
+            margin-bottom: var(--space-16);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .case-study-section h2 {
+            text-align: left;
+            margin-bottom: var(--space-6);
+            color: var(--color-text-primary);
+            border-left: 4px solid var(--color-accent-blue);
+            padding-left: var(--space-4);
+        }
+
+        .case-study-section h3 {
+            margin: var(--space-8) 0 var(--space-4);
+            color: var(--color-accent-cyan);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+            margin-top: var(--space-8);
+        }
+
+        .result-card {
+            background: var(--color-bg-tertiary);
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--glass-border);
+            text-align: center;
+        }
+
+        .result-number {
+            font-size: var(--text-4xl);
+            font-weight: 800;
+            color: var(--color-accent-green);
+            margin-bottom: var(--space-2);
+        }
+
+        .result-label {
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-2);
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-3);
+            margin-top: var(--space-4);
+        }
+
+        .tech-badge {
+            background: var(--glass-bg);
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            border: 1px solid var(--glass-border);
+            font-size: var(--text-sm);
+        }
+
+        .testimonial-box {
+            background: var(--glass-bg);
+            padding: var(--space-10);
+            border-radius: var(--radius-2xl);
+            border-left: 6px solid var(--color-accent-orange);
+            position: relative;
+        }
+
+        .case-study-cta {
+            text-align: center;
+            background: var(--gradient-primary);
+            padding: var(--space-16);
+            border-radius: var(--radius-2xl);
+            margin-top: var(--space-20);
+            color: white;
+        }
+
+        .case-study-cta h2 {
+            text-align: center;
+            border: none;
+            padding: 0;
+            margin-bottom: var(--space-4);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Abubakri Bello</div>
+            <div class="nav-links">
+                <a href="index.html">← Back to Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Case Study Hero -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div class="hero-content">
+                <span class="case-study-tag">Recruitment</span>
+                <h1>AI-Powered Candidate Matching System</h1>
+                <p class="hero-subtitle">Reducing manual matching work by 87% for a construction recruitment agency</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="case-study-detail">
+        <div class="container">
+            <div class="case-study-overview">
+                <div class="overview-card">
+                    <h3>Client</h3>
+                    <p>Construction Agency</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Scale</h3>
+                    <p>20,000+ Profiles</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Impact</h3>
+                    <p>87% Time Saved</p>
+                </div>
+                <div class="overview-card">
+                    <h3>ROI</h3>
+                    <p>6 Week Payback</p>
+                </div>
+            </div>
+
+            <div class="case-study-section">
+                <h2>The Problem</h2>
+                <p>A construction-focused recruitment agency with 1,700+ client companies and 500 active job openings
+                    was struggling with scale. Recruiters were spending over 25 hours per week manually matching
+                    candidates to roles from a database of 20,000+ profiles.</p>
+                <p>The manual process was:</p>
+                <ul class="challenge-list">
+                    <li>Slow and prone to human error</li>
+                    <li>Inconsistent across different team members</li>
+                    <li>Preventing business development activities</li>
+                    <li>Creating a massive bottleneck for growth targets</li>
+                </ul>
+            </div>
+
+            <div class="case-study-section">
+                <h2>The Solution</h2>
+                <p>I designed an AI-powered matching engine that evaluates every candidate against open roles using
+                    sophisticated structured criteria.</p>
+                <h3>Technical Implementation</h3>
+                <ul class="solution-list">
+                    <li><strong>Matching Engine:</strong> Built with Python and OpenAI to analyze CVs and job
+                        descriptions in seconds.</li>
+                    <li><strong>Multi-Dimensional Scoring:</strong> Candidates are scored across six dimensions
+                        including skills, experience level, location, and salary expectations.</li>
+                    <li><strong>Automated Logging:</strong> The system provides transparent match explanations for
+                        recruiter final review.</li>
+                    <li><strong>Seamless Integration:</strong> Connected directly to the existing candidate database and
+                        job board tools.</li>
+                </ul>
+            </div>
+
+            <div class="case-study-section">
+                <h2>The Results</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">87%</div>
+                        <div class="result-label">Work Reduction</div>
+                        <p>25 hours/week down to 3 hours/week</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">3x</div>
+                        <div class="result-label">Faster Shortlist</div>
+                        <p>From 48 hours to 16 hours average</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">22h</div>
+                        <div class="result-label">Weekly Reclaimed</div>
+                        <p>Per recruiter for client acquisition</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">£42k</div>
+                        <div class="result-label">Annual Value</div>
+                        <p>In reclaimed productivity</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-section">
+                <h2>Client Testimonial</h2>
+                <div class="testimonial-box">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">The system paid for itself in six weeks. Our recruiters are finally
+                        doing what we hired them for—building relationships, not shuffling CVs.</p>
+                    <p class="testimonial-author">— Head of Operations, Construction Recruitment Agency</p>
+                </div>
+            </div>
+
+            <div class="case-study-section">
+                <h2>Technologies Used</h2>
+                <div class="tech-stack">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">n8n</span>
+                    <span class="tech-badge">OpenAI</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">Vector Search</span>
+                </div>
+            </div>
+
+            <div class="case-study-cta">
+                <h2>Scale Your Talent Operations</h2>
+                <p>Get a custom roadmap to automate your matching process</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="cta-button"
+                        style="background: white; color: var(--color-bg-primary);">Book Free Audit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Abubakri Bello. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

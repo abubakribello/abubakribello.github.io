@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Social Media Content Repurposing System - Case Study by Abubakri Bello">
+    <title>Social Media Automation Case Study | Abubakri Bello</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .case-study-detail {
+            padding: var(--space-20) 0;
+        }
+
+        .case-study-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-6);
+            margin-bottom: var(--space-16);
+        }
+
+        .overview-card {
+            background: var(--glass-bg);
+            padding: var(--space-6);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--glass-border);
+            text-align: center;
+        }
+
+        .overview-card h3 {
+            color: var(--color-accent-blue);
+            margin-bottom: var(--space-2);
+            font-size: var(--text-sm);
+            text-transform: uppercase;
+        }
+
+        .overview-card p {
+            font-weight: 700;
+            font-size: var(--text-lg);
+        }
+
+        .case-study-section {
+            margin-bottom: var(--space-16);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .case-study-section h2 {
+            text-align: left;
+            margin-bottom: var(--space-6);
+            color: var(--color-text-primary);
+            border-left: 4px solid var(--color-accent-blue);
+            padding-left: var(--space-4);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+            margin-top: var(--space-8);
+        }
+
+        .result-card {
+            background: var(--color-bg-tertiary);
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--glass-border);
+            text-align: center;
+        }
+
+        .result-number {
+            font-size: var(--text-4xl);
+            font-weight: 800;
+            color: var(--color-accent-green);
+            margin-bottom: var(--space-2);
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-3);
+            margin-top: var(--space-4);
+        }
+
+        .tech-badge {
+            background: var(--glass-bg);
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            border: 1px solid var(--glass-border);
+            font-size: var(--text-sm);
+        }
+
+        .case-study-cta {
+            text-align: center;
+            background: var(--gradient-purple);
+            padding: var(--space-16);
+            border-radius: var(--radius-2xl);
+            margin-top: var(--space-20);
+            color: #333;
+        }
+
+        .case-study-cta h2 {
+            text-align: center;
+            border: none;
+            padding: 0;
+            margin-bottom: var(--space-4);
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Abubakri Bello</div>
+            <div class="nav-links"><a href="index.html">← Back to Portfolio</a></div>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div class="hero-content">
+                <span class="case-study-tag">B2B Education</span>
+                <h1>Social Media Content Repurposing System</h1>
+                <p class="hero-subtitle">Turning long-form video into a multi-platform content engine</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study-detail">
+        <div class="container">
+            <div class="case-study-overview">
+                <div class="overview-card">
+                    <h3>Client</h3>
+                    <p>B2B Educator</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Time Saved</h3>
+                    <p>8.5 Hours/Week</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Growth</h3>
+                    <p>34% Email List</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Reach</h3>
+                    <p>3x Engagement</p>
+                </div>
+            </div>
+
+            <div class="case-study-section">
+                <h2>The Challenge</h2>
+                <p>The client was spending 8-10 hours every week manually repurposing long-form webinars and tutorials
+                    for LinkedIn, Twitter, and their email newsletter. They needed a way to maintain a high-volume
+                    social presence without the manual grind.</p>
+            </div>
+
+            <div class="case-study-section">
+                <h2>The Solution</h2>
+                <p>I built an automated pipeline that takes a single video URL and generates a month's worth of content
+                    across all channels.</p>
+                <ul class="solution-list">
+                    <li><strong>AI Transcription & Analysis:</strong> Extracts key insights and "gold nuggets" from raw
+                        video.</li>
+                    <li><strong>Multi-Platform Writing:</strong> Tailors content specifically for LinkedIn threads,
+                        Twitter posts, and newsletter digests.</li>
+                    <li><strong>Automated Scheduling:</strong> Direct integration with content calendars for hands-off
+                        publishing.</li>
+                </ul>
+            </div>
+
+            <div class="case-study-section">
+                <h2>The Results</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">85%</div>
+                        <div class="result-label">Time Saved</div>
+                        <p>10 hours down to 90 minutes weekly</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">3x</div>
+                        <div class="result-label">Engagement</div>
+                        <p>Increase in LinkedIn and Twitter interactions</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">34%</div>
+                        <div class="result-label">List Growth</div>
+                        <p>Driven by optimized newsletter content</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-section">
+                <h2>Technologies Used</h2>
+                <div class="tech-stack">
+                    <span class="tech-badge">n8n</span>
+                    <span class="tech-badge">Anthropic Claude</span>
+                    <span class="tech-badge">AssemblyAI</span>
+                    <span class="tech-badge">Buffer API</span>
+                </div>
+            </div>
+
+            <div class="case-study-cta">
+                <h2>Automate Your Content Engine</h2>
+                <p>Turn one piece of content into thirty posts instantly</p>
+                <a href="index.html#contact" class="cta-button"
+                    style="background: white; color: #333; margin-top: var(--space-6);">Book Audit</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Abubakri Bello</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -600,10 +600,15 @@ section {
 }
 
 .cs-overview {
+    padding: var(--space-8) 0;
+    background: var(--color-bg-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.cs-overview-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-4);
-    margin-bottom: var(--space-16);
 }
 
 .cs-overview-card {
@@ -796,6 +801,145 @@ section {
     margin-bottom: var(--space-8);
 }
 
+/* ========== CASE STUDY — ADDITIONAL COMPONENT CLASSES ========== */
+
+.cs-tag {
+    display: inline-block;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: var(--space-4);
+}
+
+.cs-heading {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-4);
+    max-width: 760px;
+    line-height: 1.15;
+}
+
+.cs-subheading {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    max-width: 620px;
+    line-height: 1.6;
+}
+
+.cs-overview-label {
+    display: block;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2);
+}
+
+.cs-overview-value {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.cs-subsection-heading {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-4);
+}
+
+.cs-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+}
+
+.cs-list li {
+    padding-left: var(--space-6);
+    position: relative;
+    color: var(--color-text-secondary);
+    line-height: 1.65;
+}
+
+.cs-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-accent);
+}
+
+.cs-list li strong {
+    color: var(--color-text-primary);
+}
+
+.cs-sublist {
+    list-style: decimal;
+    padding-left: var(--space-6);
+    margin-top: var(--space-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.cs-sublist li {
+    color: var(--color-text-secondary);
+    line-height: 1.65;
+    padding-left: 0;
+}
+
+.cs-sublist li::before {
+    display: none;
+}
+
+.cs-result-card p {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin-top: var(--space-2);
+}
+
+.cs-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+}
+
+.cs-tech-badge {
+    display: inline-block;
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-full);
+}
+
+.cs-cta-buttons {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: var(--space-6);
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
     section { padding: var(--space-16) 0; }
@@ -835,7 +979,7 @@ section {
     .work-grid { grid-template-columns: 1fr; }
     .work-card--featured { grid-column: 1; }
     .stack-grid { grid-template-columns: 1fr; gap: var(--space-8); }
-    .cs-overview { grid-template-columns: repeat(2, 1fr); }
+    .cs-overview-grid { grid-template-columns: repeat(2, 1fr); }
     .cs-results-grid { grid-template-columns: 1fr; }
 
     .footer-inner { flex-direction: column; gap: var(--space-4); text-align: center; }

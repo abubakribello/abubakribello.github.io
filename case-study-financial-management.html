@@ -4,231 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Automated Financial Management System - Case Study by Abubakri Bello">
-    <title>Financial Management Case Study | Abubakri Bello</title>
+    <meta name="description" content="Automated Financial Dashboard — Case Study by Abubakri Bello">
+    <title>Automated Financial Dashboard Case Study | Abubakri Bello</title>
+    <link rel="stylesheet" href="design-tokens.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .case-study-detail {
-            padding: var(--space-20) 0;
-        }
-
-        .case-study-overview {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--space-6);
-            margin-bottom: var(--space-16);
-        }
-
-        .overview-card {
-            background: var(--glass-bg);
-            padding: var(--space-6);
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--glass-border);
-            text-align: center;
-        }
-
-        .overview-card h3 {
-            color: var(--color-accent-blue);
-            margin-bottom: var(--space-2);
-            font-size: var(--text-sm);
-            text-transform: uppercase;
-        }
-
-        .overview-card p {
-            font-weight: 700;
-            font-size: var(--text-lg);
-        }
-
-        .case-study-section {
-            margin-bottom: var(--space-16);
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .case-study-section h2 {
-            text-align: left;
-            margin-bottom: var(--space-6);
-            color: var(--color-text-primary);
-            border-left: 4px solid var(--color-accent-blue);
-            padding-left: var(--space-4);
-        }
-
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--space-6);
-            margin-top: var(--space-8);
-        }
-
-        .result-card {
-            background: var(--color-bg-tertiary);
-            padding: var(--space-8);
-            border-radius: var(--radius-xl);
-            border: 1px solid var(--glass-border);
-            text-align: center;
-        }
-
-        .result-number {
-            font-size: var(--text-4xl);
-            font-weight: 800;
-            color: var(--color-accent-green);
-            margin-bottom: var(--space-2);
-        }
-
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-3);
-            margin-top: var(--space-4);
-        }
-
-        .tech-badge {
-            background: var(--glass-bg);
-            padding: var(--space-2) var(--space-4);
-            border-radius: var(--radius-full);
-            border: 1px solid var(--glass-border);
-            font-size: var(--text-sm);
-        }
-
-        .case-study-cta {
-            text-align: center;
-            background: var(--gradient-blue);
-            padding: var(--space-16);
-            border-radius: var(--radius-2xl);
-            margin-top: var(--space-20);
-            color: white;
-        }
-
-        .case-study-cta h2 {
-            text-align: center;
-            border: none;
-            padding: 0;
-            margin-bottom: var(--space-4);
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
+
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">Abubakri Bello</div>
-            <div class="nav-links"><a href="index.html">← Back to Portfolio</a></div>
+            <div class="nav-links">
+                <a href="index.html">← Back to Portfolio</a>
+            </div>
         </div>
     </nav>
 
-    <section class="hero" style="min-height: 60vh;">
+    <!-- Case Study Hero -->
+    <section class="cs-hero">
         <div class="container">
-            <div class="hero-content">
-                <span class="case-study-tag">Professional Services</span>
-                <h1>Automated Financial Management System</h1>
-                <p class="hero-subtitle">Eliminating 95% of manual bookkeeping for a £400K revenue business</p>
+            <div class="cs-hero-inner">
+                <span class="cs-tag">Finance · Automation</span>
+                <h1 class="cs-heading">Automated Financial Dashboard</h1>
+                <p class="cs-subheading">Eliminating manual bookkeeping and giving a fast-growing consultancy real-time visibility across all three revenue streams.</p>
             </div>
         </div>
     </section>
 
-    <section class="case-study-detail">
+    <!-- Overview Cards -->
+    <section class="cs-overview">
         <div class="container">
-            <div class="case-study-overview">
-                <div class="overview-card">
-                    <h3>Client</h3>
-                    <p>Service Business</p>
+            <div class="cs-overview-grid">
+                <div class="cs-overview-card">
+                    <span class="cs-overview-label">Client</span>
+                    <span class="cs-overview-value">DigitalXshift</span>
                 </div>
-                <div class="overview-card">
-                    <h3>Reclaimed</h3>
-                    <p>7.5 Hours/Week</p>
+                <div class="cs-overview-card">
+                    <span class="cs-overview-label">Revenue streams</span>
+                    <span class="cs-overview-value">3</span>
                 </div>
-                <div class="overview-card">
-                    <h3>Accuracy</h3>
-                    <p>100% Error-Free</p>
+                <div class="cs-overview-card">
+                    <span class="cs-overview-label">Time to live</span>
+                    <span class="cs-overview-value">3 weeks</span>
                 </div>
-                <div class="overview-card">
-                    <h3>Visibility</h3>
-                    <p>Real-time Cash</p>
+                <div class="cs-overview-card">
+                    <span class="cs-overview-label">Status</span>
+                    <span class="cs-overview-value">In production</span>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="case-study-section">
-                <h2>The Challenge</h2>
-                <p>The founder of a growing service business was spending 6-8 hours every week on manual bookkeeping
-                    across multiple payment channels (Stripe, PayPal, Bank Transfers). This was taking time away from
-                    strategic growth and high-level client management.</p>
+    <!-- Case Study Body -->
+    <section class="cs-body">
+        <div class="container">
+
+            <div class="cs-section">
+                <h2>The situation.</h2>
+                <p>DigitalXshift, a fast-growing consultancy, was reconciling transactions manually across three different revenue streams. Invoices and receipts arrived via Gmail. Sales data sat in HighLevel. There was no single view of their cash position at any point in time.</p>
+                <p>Month-end reconciliation took hours. The founders had no way to quickly answer basic questions like "how much came in this week" or "what's the current burn rate." Financial decisions were being made on outdated information.</p>
             </div>
 
-            <div class="case-study-section">
-                <h2>The Solution</h2>
-                <p>I built a unified financial dashboard and automation engine that consolidates data from all sources
-                    into a single source of truth.</p>
-                <ul class="solution-list">
-                    <li><strong>Unified Data Ingestion:</strong> Automated triggers capture every transaction from
-                        Stripe and PayPal in real-time.</li>
-                    <li><strong>Categorization Engine:</strong> AI-powered rules categorize expenses and income
-                        automatically based on historical data.</li>
-                    <li><strong>Real-time Dashboard:</strong> A visual dashboard providing instant visibility into cash
-                        position, monthly recurring revenue (MRR), and burn rate.</li>
+            <div class="cs-section">
+                <h2>What I built.</h2>
+                <p>I built an automated ingestion and dashboarding system that pulls all financial data into one live view, without anyone touching a spreadsheet.</p>
+                <ul class="cs-list">
+                    <li><strong>Gmail ingestion:</strong> The system polls Gmail automatically and extracts key data from incoming invoices and receipts using AI. No manual logging or forwarding required.</li>
+                    <li><strong>HighLevel sales sync:</strong> Deal and payment data is pulled from HighLevel automatically, covering all closed sales and payment milestones.</li>
+                    <li><strong>Categorisation engine:</strong> Each transaction is classified by type and project using AI, so the dashboard always reflects accurate category breakdowns without manual tagging.</li>
+                    <li><strong>Live Google Sheets dashboard:</strong> A single view shows running totals, revenue vs expenses by category, and burn rate updated in real time. No manual entry required to keep it current.</li>
+                    <li><strong>Anomaly alerts:</strong> Unusual transactions trigger an alert so the team can review them without having to audit the sheet themselves.</li>
                 </ul>
             </div>
 
-            <div class="case-study-section">
-                <h2>The Results</h2>
-                <div class="results-grid">
-                    <div class="result-card">
-                        <div class="result-number">95%</div>
-                        <div class="result-label">Time Reduction</div>
-                        <p>7.5 hours down to 20 minutes/week</p>
+            <div class="cs-section">
+                <h2>The results.</h2>
+                <div class="cs-results-grid">
+                    <div class="cs-result-card">
+                        <div class="cs-result-number">Estimated: 95%</div>
+                        <div class="cs-result-label">Reduction in weekly finance admin</div>
+                        <p>What used to take hours at month-end now happens automatically in the background.</p>
                     </div>
-                    <div class="result-card">
-                        <div class="result-number">0</div>
-                        <div class="result-label">Data Errors</div>
-                        <p>Eliminated manual entry mistakes</p>
+                    <div class="cs-result-card">
+                        <div class="cs-result-number">Real-time</div>
+                        <div class="cs-result-label">Cash visibility from day one</div>
+                        <p>The founders can see current cash position at any moment without waiting for a report.</p>
                     </div>
-                    <div class="result-card">
-                        <div class="result-number">£15k+</div>
-                        <div class="result-label">Annual Value</div>
-                        <p>Based on founder's hourly rate</p>
+                    <div class="cs-result-card">
+                        <div class="cs-result-number">3</div>
+                        <div class="cs-result-label">Revenue streams unified</div>
+                        <p>All income and expenses tracked and categorised in one place for the first time.</p>
+                    </div>
+                    <div class="cs-result-card">
+                        <div class="cs-result-number">3 weeks</div>
+                        <div class="cs-result-label">From brief to production</div>
+                        <p>System was live and processing real transactions within three weeks of kickoff.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="case-study-section">
-                <h2>Client Testimonial</h2>
-                <div class="testimonial-box"
-                    style="background: var(--glass-bg); padding: var(--space-8); border-radius: var(--radius-xl); border-left: 6px solid var(--color-accent-orange);">
-                    <p style="font-style: italic; font-size: var(--text-lg);">"I was drowning in manual bookkeeping. Now
-                        I have real-time visibility into my cash position and spend 20 minutes a week instead of 8
-                        hours. Game changer."</p>
-                    <p style="margin-top: var(--space-4); font-weight: 600;">— Founder, Service Business</p>
+            <div class="cs-section">
+                <h2>Technologies used.</h2>
+                <div class="cs-tech-stack">
+                    <span class="cs-tech-badge">n8n</span>
+                    <span class="cs-tech-badge">OpenAI</span>
+                    <span class="cs-tech-badge">Gmail API</span>
+                    <span class="cs-tech-badge">Google Sheets</span>
+                    <span class="cs-tech-badge">HighLevel</span>
                 </div>
             </div>
 
-            <div class="case-study-section">
-                <h2>Technologies Used</h2>
-                <div class="tech-stack">
-                    <span class="tech-badge">n8n</span>
-                    <span class="tech-badge">Stripe API</span>
-                    <span class="tech-badge">Google Sheets</span>
-                    <span class="tech-badge">Slack Notifications</span>
+            <div class="cs-cta">
+                <h2>Want something similar?</h2>
+                <p>If your team is doing manual reconciliation or working from outdated financial data, let's talk about building a live view that runs itself.</p>
+                <div class="cs-cta-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="index.html#work" class="btn btn-ghost">View More Work</a>
                 </div>
             </div>
 
-            <div class="case-study-cta">
-                <h2>Master Your Business Finances</h2>
-                <p>Automate your bookkeeping and get real-time visibility</p>
-                <a href="index.html#contact" class="cta-button"
-                    style="background: white; color: var(--color-accent-blue); margin-top: var(--space-6);">Schedule
-                    Audit</a>
-            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Abubakri Bello</p>
+            <div class="footer-inner">
+                <span class="footer-name">Abubakri Bello</span>
+                <span class="footer-copy">&copy; 2026. All rights reserved.</span>
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 

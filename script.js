@@ -1,15 +1,18 @@
-// Modern Portfolio Interactions
+// Portfolio Interactions
 
 document.addEventListener('DOMContentLoaded', () => {
+
     // 1. Navigation Scroll Effect
     const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
 
     // 2. Smooth Scrolling for internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -30,8 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Reveal Animations on Scroll
     const revealOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.08,
+        rootMargin: '0px 0px -40px 0px'
     };
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -43,26 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, revealOptions);
 
-    // Apply reveal to sections and specific elements
-    document.querySelectorAll('section > .container, .service-card, .problem-card, .case-study-card, .process-step').forEach(el => {
-        el.style.opacity = '0'; // Initial state
+    document.querySelectorAll('section > .container, .work-card, .about-stat, .stack-group').forEach(el => {
+        el.style.opacity = '0';
         revealObserver.observe(el);
     });
 
-    // 4. Tools Carousel - ensure duplicate items exist for seamless loop
-    const carousel = document.querySelector('.tools-carousel');
-    if (carousel) {
-        const cards = carousel.querySelectorAll('.tool-card');
-        // If we don't have enough cards to fill the screen, duplicate them
-        if (cards.length < 20) {
-            cards.forEach(card => {
-                const clone = card.cloneNode(true);
-                carousel.appendChild(clone);
-            });
-        }
-    }
-
-    // 5. Active Link Highlighting
+    // 4. Active Link Highlighting
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -70,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
             if (window.pageYOffset >= sectionTop - 150) {
                 current = section.getAttribute('id');
             }
@@ -83,4 +71,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 5. Mobile nav toggle
+    const mobileToggle = document.querySelector('.nav-mobile-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (mobileToggle && navLinksEl) {
+        mobileToggle.addEventListener('click', () => {
+            const isVisible = navLinksEl.classList.contains('nav-open');
+            navLinksEl.classList.toggle('nav-open', !isVisible);
+        });
+    }
+
 });
